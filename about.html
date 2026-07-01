@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - موقعنا</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen"><div class="spinner"></div><p>جارٍ التحميل...</p></div>
+    <div class="toast-container" id="toastContainer"></div>
+    <button class="scroll-to-top" id="scrollToTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <svg width="45" height="45" viewBox="0 0 45 45"><rect x="2" y="2" width="41" height="41" rx="10" fill="#4f46e5"/><text x="22.5" y="30" text-anchor="middle" fill="white" font-size="22" font-weight="bold" font-family="Arial">م</text></svg>
+                <span>موقعنا</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="about.html" class="nav-link active">من نحن</a></li>
+                <li><a href="services.html" class="nav-link">الخدمات</a></li>
+                <li><a href="portfolio.html" class="nav-link">معرض الأعمال</a></li>
+                <li><a href="blog.html" class="nav-link">المدونة</a></li>
+                <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+                <li><a href="profile.html" class="nav-link">الملف الشخصي</a></li>
+                <li><a href="login.html" class="nav-link btn-nav-login">تسجيل الدخول</a></li>
+                <li id="navLogoutBtn" style="display:none;"><a href="#" class="nav-link" onclick="handleLogout()">تسجيل الخروج</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" id="darkModeToggle"><i class="fa-solid fa-moon"></i></button>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>من نحن</h1>
+            <div class="breadcrumb"><a href="index.html">الرئيسية</a> / <span>من نحن</span></div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-badge">قصتنا</span>
+                    <h2>نحن فريق <span class="gradient-text">شغوف</span> بالتكنولوجيا</h2>
+                    <p>تأسست شركتنا عام 2011 بهدف تقديم حلول رقمية مبتكرة للشركات والمؤسسات في العالم العربي. نؤمن بأن التكنولوجيا هي المفتاح لنمو الأعمال وتحقيق النجاح.</p>
+                    <p>يتكون فريقنا من أكثر من 50 خبيرًا في مجالات تطوير الويب وتطبيقات الجوال والتصميم والتسويق الرقمي. نعمل معًا لنقدم أفضل الحلول لعملائنا.</p>
+                    <div class="about-features-list">
+                        <div><i class="fa-solid fa-check-circle"></i> خبرة تزيد عن 15 عامًا في المجال</div>
+                        <div><i class="fa-solid fa-check-circle"></i> أكثر من 250 مشروعًا ناجحًا</div>
+                        <div><i class="fa-solid fa-check-circle"></i> فريق من 50+ خبير متخصص</div>
+                        <div><i class="fa-solid fa-check-circle"></i> عملاء في 10 دول حول العالم</div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-img-placeholder">
+                        <i class="fa-solid fa-people-group"></i>
+                        <span>فريق موقعنا</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="vision-mission section-padding bg-light">
+        <div class="container">
+            <div class="vm-grid">
+                <div class="vm-card vision-card">
+                    <div class="vm-icon"><i class="fa-solid fa-eye"></i></div>
+                    <h3>رؤيتنا</h3>
+                    <p>أن نكون الشريك الرقمي الأول للشركات الطموحة في العالم العربي، ونقود التحول الرقمي من خلال حلول إبداعية ومستدامة.</p>
+                </div>
+                <div class="vm-card mission-card">
+                    <div class="vm-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3>مهمتنا</h3>
+                    <p>تمكين الشركات من النمو والازدهار من خلال تقديم خدمات رقمية عالية الجودة تجمع بين الإبداع والتقنية والخبرة العميقة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">فريقنا</span>
+                <h2>تعرف على <span class="gradient-text">فريق العمل</span></h2>
+                <p>نخبة من المبدعين والمحترفين يعملون معًا لتحقيق رؤيتكم</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">أح</div>
+                    <h3>أحمد الشمري</h3>
+                    <span class="team-role">المدير التنفيذي</span>
+                    <div class="team-social">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">سا</div>
+                    <h3>سارة القحطاني</h3>
+                    <span class="team-role">مديرة التصميم</span>
+                    <div class="team-social">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">خا</div>
+                    <h3>خالد الدوسري</h3>
+                    <span class="team-role">مطور رئيسي</span>
+                    <div class="team-social">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">نو</div>
+                    <h3>نورة العتيبي</h3>
+                    <span class="team-role">مديرة المشاريع</span>
+                    <div class="team-social">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <div class="footer-logo"><svg width="40" height="40" viewBox="0 0 45 45"><rect x="2" y="2" width="41" height="41" rx="10" fill="#4f46e5"/><text x="22.5" y="30" text-anchor="middle" fill="white" font-size="22" font-weight="bold" font-family="Arial">م</text></svg><span>موقعنا</span></div>
+                    <p>وكالة رقمية متكاملة نقدم حلولاً إبداعية في تطوير الويب والتطبيقات والتصميم.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-x-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col"><h4>روابط سريعة</h4><ul><li><a href="index.html">الرئيسية</a></li><li><a href="about.html">من نحن</a></li><li><a href="services.html">الخدمات</a></li><li><a href="portfolio.html">معرض الأعمال</a></li></ul></div>
+                <div class="footer-col"><h4>المزيد</h4><ul><li><a href="blog.html">المدونة</a></li><li><a href="contact.html">اتصل بنا</a></li><li><a href="profile.html">الملف الشخصي</a></li></ul></div>
+                <div class="footer-col footer-contact"><h4>تواصل معنا</h4><ul><li><i class="fa-solid fa-location-dot"></i> الرياض، المملكة العربية السعودية</li><li><i class="fa-solid fa-phone"></i> +966 50 000 0000</li><li><i class="fa-solid fa-envelope"></i> info@mawqena.com</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 موقعنا. جميع الحقوق محفوظة.</p></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتنا - موقعنا</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <script>document.getElementById('loadingScreen').style.display = 'none';</script>
+    <div class="toast-container" id="toastContainer"></div>
+    <button class="scroll-to-top" id="scrollToTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <svg width="45" height="45" viewBox="0 0 45 45"><rect x="2" y="2" width="41" height="41" rx="10" fill="#4f46e5"/><text x="22.5" y="30" text-anchor="middle" fill="white" font-size="22" font-weight="bold" font-family="Arial">م</text></svg>
+                <span>موقعنا</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="about.html" class="nav-link">من نحن</a></li>
+                <li><a href="services.html" class="nav-link active">الخدمات</a></li>
+                <li><a href="portfolio.html" class="nav-link">معرض الأعمال</a></li>
+                <li><a href="blog.html" class="nav-link">المدونة</a></li>
+                <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+                <li><a href="profile.html" class="nav-link">الملف الشخصي</a></li>
+                <li><a href="login.html" class="nav-link btn-nav-login">تسجيل الدخول</a></li>
+                <li id="navLogoutBtn" style="display:none;"><a href="#" class="nav-link" onclick="handleLogout()">تسجيل الخروج</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" id="darkModeToggle"><i class="fa-solid fa-moon"></i></button>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container"><h1>خدماتنا</h1><div class="breadcrumb"><a href="index.html">الرئيسية</a> / <span>الخدمات</span></div></div>
+    </section>
+
+    <section class="services-page section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">خدماتنا</span>
+                <h2>حلول <span class="gradient-text">متكاملة</span> تناسب احتياجاتك</h2>
+            </div>
+            <div class="services-page-grid">
+                <div class="service-detail-card">
+                    <div class="service-detail-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>تطوير مواقع الويب</h3>
+                    <p>نطور مواقع ويب احترافية عالية الأداء باستخدام أحدث التقنيات مثل HTML5 وCSS3 وJavaScript وReact وNode.js. مواقعنا سريعة وآمنة ومتوافقة مع محركات البحث.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> تصميم متجاوب لجميع الأجهزة</li>
+                        <li><i class="fa-solid fa-check"></i> تحسين محركات البحث SEO</li>
+                        <li><i class="fa-solid fa-check"></i> سرعة تحميل فائقة</li>
+                        <li><i class="fa-solid fa-check"></i> لوحة تحكم سهلة الاستخدام</li>
+                    </ul>
+                </div>
+                <div class="service-detail-card">
+                    <div class="service-detail-icon"><i class="fa-solid fa-mobile-button"></i></div>
+                    <h3>تطبيقات الجوال</h3>
+                    <p>نطور تطبيقات جوال أصلية لنظامي iOS وAndroid باستخدام Swift وKotlin وFlutter. تطبيقاتنا سريعة وسلسة وتقدم تجربة مستخدم رائعة.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> تطبيقات أصلية عالية الأداء</li>
+                        <li><i class="fa-solid fa-check"></i> تجربة مستخدم سلسة</li>
+                        <li><i class="fa-solid fa-check"></i> دعم الإشعارات الفورية</li>
+                        <li><i class="fa-solid fa-check"></i> تكامل مع أنظمة الدفع</li>
+                    </ul>
+                </div>
+                <div class="service-detail-card">
+                    <div class="service-detail-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h3>تصميم UI/UX</h3>
+                    <p>نصمم واجهات مستخدم جذابة وتجارب مستخدم استثنائية. نركز على جعل كل تفاعل مع منتجك الرقمي ممتعًا وسهلاً. نستخدم Figma وAdobe XD.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> بحث وتحليل المستخدمين</li>
+                        <li><i class="fa-solid fa-check"></i> نماذج أولية تفاعلية</li>
+                        <li><i class="fa-solid fa-check"></i> اختبارات قابلية الاستخدام</li>
+                        <li><i class="fa-solid fa-check"></i> تصميم متوافق مع الهوية</li>
+                    </ul>
+                </div>
+                <div class="service-detail-card">
+                    <div class="service-detail-icon"><i class="fa-solid fa-cloud"></i></div>
+                    <h3>الاستضافة السحابية</h3>
+                    <p>نوفر خدمات استضافة سحابية موثوقة مع ضمان وقت تشغيل 99.9%. نستخدم AWS وGoogle Cloud لتأمين أفضل أداء وأعلى مستوى من الأمان.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> نسخ احتياطية تلقائية</li>
+                        <li><i class="fa-solid fa-check"></i> شهادة SSL مجانية</li>
+                        <li><i class="fa-solid fa-check"></i> حماية من هجمات DDoS</li>
+                        <li><i class="fa-solid fa-check"></i> دعم فني على مدار الساعة</li>
+                    </ul>
+                </div>
+                <div class="service-detail-card">
+                    <div class="service-detail-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h3>تحسين محركات البحث SEO</h3>
+                    <p>نساعد موقعك في الظهور في الصفحات الأولى من نتائج البحث. نستخدم استراتيجيات SEO متقدمة لزيادة الزيارات العضوية وتحسين ترتيبك.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> تدقيق SEO شامل</li>
+                        <li><i class="fa-solid fa-check"></i> تحسين المحتوى والكلمات المفتاحية</li>
+                        <li><i class="fa-solid fa-check"></i> بناء روابط خلفية</li>
+                        <li><i class="fa-solid fa-check"></i> تقارير أداء شهرية</li>
+                    </ul>
+                </div>
+                <div class="service-detail-card">
+                    <div class="service-detail-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>الأمن السيبراني</h3>
+                    <p>نوفر حلول أمنية متكاملة لحماية موقعك وبيانات عملائك. نستخدم أحدث تقنيات الأمان والمراقبة المستمرة للكشف عن التهديدات.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> فحص الثغرات الأمنية</li>
+                        <li><i class="fa-solid fa-check"></i> جدار حماية متقدم</li>
+                        <li><i class="fa-solid fa-check"></i> مراقبة على مدار الساعة</li>
+                        <li><i class="fa-solid fa-check"></i> استشارات أمنية دورية</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about"><div class="footer-logo"><svg width="40" height="40" viewBox="0 0 45 45"><rect x="2" y="2" width="41" height="41" rx="10" fill="#4f46e5"/><text x="22.5" y="30" text-anchor="middle" fill="white" font-size="22" font-weight="bold" font-family="Arial">م</text></svg><span>موقعنا</span></div><p>وكالة رقمية متكاملة لحلول الويب والتطبيقات والتصميم.</p><div class="social-links"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-x-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div></div>
+                <div class="footer-col"><h4>روابط سريعة</h4><ul><li><a href="index.html">الرئيسية</a></li><li><a href="about.html">من نحن</a></li><li><a href="services.html">الخدمات</a></li><li><a href="portfolio.html">معرض الأعمال</a></li></ul></div>
+                <div class="footer-col"><h4>المزيد</h4><ul><li><a href="blog.html">المدونة</a></li><li><a href="contact.html">اتصل بنا</a></li><li><a href="profile.html">الملف الشخصي</a></li></ul></div>
+                <div class="footer-col footer-contact"><h4>تواصل معنا</h4><ul><li><i class="fa-solid fa-location-dot"></i> الرياض، السعودية</li><li><i class="fa-solid fa-phone"></i> +966 50 000 0000</li><li><i class="fa-solid fa-envelope"></i> info@mawqena.com</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 موقعنا. جميع الحقوق محفوظة.</p></div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
